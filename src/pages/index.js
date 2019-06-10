@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import GetStartedBtn from "../components/get-started/get-started-btn"
-import Quote from "../components/get-started/quote"
-import { navigate } from "gatsby"
+import SEO from "../components/seo";
+import Layout from "../components/layout";
+import GetStartedBtn from "../components/get-started/get-started-btn";
+import Quote from "../components/get-started/quote";
+import { navigate } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
@@ -31,6 +31,6 @@ const IndexPage = () => (
       </GetStartedBtn>
     </main>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

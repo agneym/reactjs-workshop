@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import Splitter from "../components/splitter"
-import Heading from "../components/heading"
+import Layout from "../components/layout";
+import Splitter from "../components/splitter";
+import Heading from "../components/heading";
 
 function HTMLPage() {
   return (
@@ -16,7 +16,7 @@ function HTMLPage() {
         </Splitter.Right>
       </Splitter>
     </Layout>
-  )
+  );
 }
 
-export default HTMLPage
+export default HTMLPage;

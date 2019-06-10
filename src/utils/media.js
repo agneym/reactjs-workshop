@@ -2,7 +2,7 @@ const sizes = {
   desktop: 992,
   tablet: 768,
   phone: 576,
-}
+};
 
 // Iterate through the sizes and create a media template
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -10,9 +10,9 @@ const media = Object.keys(sizes).reduce((acc, label) => {
     @media (max-width: ${sizes[label] / 16}em) {
       ${css(...args)}
     }
-  `
+  `;
 
-  return acc
-}, {})
+  return acc;
+}, {});
 
-export default media
+export default media;

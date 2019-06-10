@@ -1,7 +1,7 @@
-import React, { Fragment } from "react"
-import { createGlobalStyle, ThemeProvider } from "styled-components"
+import React, { Fragment } from "react";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-import theme from "../utils/theme"
+import theme from "../utils/theme";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${props => props.theme.fonts.heading};
     font-weight: 300;
   }
-`
+`;
 
 function Layout({ children }) {
   return (
@@ -22,7 +22,7 @@ function Layout({ children }) {
         <GlobalStyle />
       </Fragment>
     </ThemeProvider>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
