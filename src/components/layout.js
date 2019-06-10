@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 
 import theme from "../utils/theme"
@@ -17,10 +17,10 @@ const GlobalStyle = createGlobalStyle`
 function Layout({ children }) {
   return (
     <ThemeProvider theme={theme}>
-      <main>
+      <Fragment>
         {children}
         <GlobalStyle />
-      </main>
+      </Fragment>
     </ThemeProvider>
   )
 }
