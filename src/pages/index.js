@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import GetStartedBtn from "../components/get-started/get-started-btn"
 import Quote from "../components/get-started/quote"
+import { navigate } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +26,9 @@ const IndexPage = () => (
         FRONT-END WORKSHOP
       </h1>
       <Quote />
-      <GetStartedBtn>Get Started</GetStartedBtn>
+      <GetStartedBtn onClick={() => navigate("/html")}>
+        Get Started
+      </GetStartedBtn>
     </main>
   </Layout>
 )

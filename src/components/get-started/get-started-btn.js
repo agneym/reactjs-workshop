@@ -9,7 +9,7 @@ const GetStartedBtn = styled.button`
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: hsl(236, 32%, 26%);
+  background-color: ${props => props.theme.colors.primary};
   margin-top: 1rem;
 
   &::before {
@@ -20,7 +20,7 @@ const GetStartedBtn = styled.button`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #fc2f70;
+    background-color: ${props => props.theme.colors.secondary};
     transform-origin: center top;
     transform: scaleY(0);
     transition: transform 0.25s ease-in-out;
