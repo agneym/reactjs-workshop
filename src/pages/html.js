@@ -8,7 +8,7 @@ function HTMLPage() {
     <Layout>
       <Splitter>
         <Splitter.Left>
-          <p>Left</p>
+          <h1>HTML</h1>
         </Splitter.Left>
         <Splitter.Right>
           <p>Right</p>

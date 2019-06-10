@@ -5,14 +5,16 @@ const Container = styled.main`
   display: grid;
   grid-template-columns: 1fr 2fr;
   min-height: 100vh;
+  grid-column-gap: 1rem;
+  align-items: center;
 `
 
-function Left({ children }) {
-  return <section>{children}</section>
+function Left({ className, children }) {
+  return <section className={className}>{children}</section>
 }
 
-function Right({ children }) {
-  return <section>{children}</section>
+function Right({ className, children }) {
+  return <section className={className}>{children}</section>
 }
 
 function Splitter({ children }) {
