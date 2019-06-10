@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
 
 const Container = styled.main`
   display: grid;
@@ -22,10 +23,20 @@ const LeftContent = styled(Content)`
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
+  transform-origin: left top;
 `;
 
 function Left({ className, children }) {
-  return <LeftContent className={className}>{children}</LeftContent>;
+  const fallDown = useSpring({
+    transform: "scaleY(1)",
+    from: { transform: "scaleY(0)" },
+  });
+  const AnimatedLeftContent = animated(LeftContent);
+  return (
+    <AnimatedLeftContent className={className} style={fallDown}>
+      {children}
+    </AnimatedLeftContent>
+  );
 }
 
 function Right({ className, children }) {
