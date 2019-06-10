@@ -1,6 +1,6 @@
 export default {
   fonts: {
-    heading: "'Titillium Web', sans-serif",
+    heading: "'Aleo', serif",
     normal: "'Open Sans', sans-serif",
   },
 }

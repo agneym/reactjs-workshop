@@ -1,2 +1,2 @@
 require("typeface-open-sans")
-require("typeface-titillium-web")
+require("typeface-aleo")
