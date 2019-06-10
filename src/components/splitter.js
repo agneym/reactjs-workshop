@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.main`
   display: grid;
@@ -7,11 +7,11 @@ const Container = styled.main`
   min-height: 100vh;
   grid-column-gap: 3rem;
   align-items: center;
-`
+`;
 
 const Content = styled.section`
   height: 100%;
-`
+`;
 
 const LeftContent = styled(Content)`
   text-align: center;
@@ -22,21 +22,21 @@ const LeftContent = styled(Content)`
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
-`
+`;
 
 function Left({ className, children }) {
-  return <LeftContent className={className}>{children}</LeftContent>
+  return <LeftContent className={className}>{children}</LeftContent>;
 }
 
 function Right({ className, children }) {
-  return <section className={className}>{children}</section>
+  return <section className={className}>{children}</section>;
 }
 
 function Splitter({ children }) {
-  return <Container>{children}</Container>
+  return <Container>{children}</Container>;
 }
 
-Splitter.Left = Left
-Splitter.Right = Right
+Splitter.Left = Left;
+Splitter.Right = Right;
 
-export default Splitter
+export default Splitter;

@@ -7,4 +7,4 @@ export default {
     primary: "hsl(236, 32%, 26%)",
     secondary: "#fc2f70",
   },
-}
+};
