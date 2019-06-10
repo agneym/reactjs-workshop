@@ -26,6 +26,8 @@ const LeftContent = styled(Content)`
   transform-origin: left top;
 `;
 
+const RightContent = styled(Content)``;
+
 function Left({ className, children }) {
   const fallDown = useSpring({
     transform: "scaleY(1)",
@@ -40,7 +42,17 @@ function Left({ className, children }) {
 }
 
 function Right({ className, children }) {
-  return <section className={className}>{children}</section>;
+  const appear = useSpring({
+    to: { transform: "translateY(0)", opacity: 1 },
+    from: { transform: "translateY(-0.4rem)", opacity: 0 },
+    delay: 1000,
+  });
+  const AnimatedRightContent = animated(RightContent);
+  return (
+    <AnimatedRightContent className={className} style={appear}>
+      {children}
+    </AnimatedRightContent>
+  );
 }
 
 function Splitter({ children }) {
