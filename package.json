@@ -25,6 +25,8 @@
     "typeface-titillium-web": "^0.0.72"
   },
   "devDependencies": {
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-react-hooks": "1.x",
     "husky": "^2.4.0",
     "prettier": "^1.18.0",
     "pretty-quick": "^1.11.0"
