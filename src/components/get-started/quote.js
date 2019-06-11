@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const Line = styled.p`
   margin: 0;
-`
+`;
 
 function Quote() {
   return (
@@ -27,7 +27,7 @@ function Quote() {
         - Martin Fowler
       </Line>
     </blockquote>
-  )
+  );
 }
 
-export default Quote
+export default Quote;

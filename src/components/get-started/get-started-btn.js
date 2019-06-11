@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const GetStartedBtn = styled.button`
   z-index: 1;
@@ -34,6 +34,6 @@ const GetStartedBtn = styled.button`
     transform-origin: center bottom;
     transform: scaleY(1);
   }
-`
+`;
 
-export default GetStartedBtn
+export default GetStartedBtn;

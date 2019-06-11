@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
 
 const Container = styled.main`
   display: grid;
@@ -22,14 +23,27 @@ const LeftContent = styled(Content)`
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
+  transform-origin: left top;
 `;
+
+const RightContent = styled(Content)``;
 
 function Left({ className, children }) {
   return <LeftContent className={className}>{children}</LeftContent>;
 }
 
 function Right({ className, children }) {
-  return <section className={className}>{children}</section>;
+  const appear = useSpring({
+    to: { transform: "translateY(0)", opacity: 1 },
+    from: { transform: "translateY(-0.4rem)", opacity: 0 },
+    delay: 1000,
+  });
+  const AnimatedRightContent = animated(RightContent);
+  return (
+    <AnimatedRightContent className={className} style={appear}>
+      {children}
+    </AnimatedRightContent>
+  );
 }
 
 function Splitter({ children }) {
