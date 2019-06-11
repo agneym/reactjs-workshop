@@ -29,16 +29,7 @@ const LeftContent = styled(Content)`
 const RightContent = styled(Content)``;
 
 function Left({ className, children }) {
-  const fallDown = useSpring({
-    transform: "scaleY(1)",
-    from: { transform: "scaleY(0)" },
-  });
-  const AnimatedLeftContent = animated(LeftContent);
-  return (
-    <AnimatedLeftContent className={className} style={fallDown}>
-      {children}
-    </AnimatedLeftContent>
-  );
+  return <LeftContent className={className}>{children}</LeftContent>;
 }
 
 function Right({ className, children }) {
