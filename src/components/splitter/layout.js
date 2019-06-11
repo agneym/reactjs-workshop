@@ -37,3 +37,11 @@ export const Footer = styled.footer`
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   margin-left: -3rem;
 `;
+
+export const FooterContent = styled.div`
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+`;
