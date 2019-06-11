@@ -4,7 +4,7 @@ export default {
     normal: "'Open Sans', sans-serif",
   },
   colors: {
-    primary: "hsl(236, 32%, 26%)",
+    primary: "#3FABAF",
     secondary: "#fc2f70",
   },
 };
