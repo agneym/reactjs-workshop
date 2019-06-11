@@ -4,7 +4,7 @@ import { useSpring, animated } from "react-spring";
 
 const Container = styled.main`
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 30% auto;
   min-height: 100vh;
   grid-column-gap: 3rem;
   align-items: center;
