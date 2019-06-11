@@ -17,12 +17,12 @@ function Heading({ title, subtitle }) {
   const appear = useSpring({
     to: { transform: "translateY(0)", opacity: 1 },
     from: { transform: "translateY(-0.6rem)", opacity: 0 },
-    delay: 500,
+    delay: 300,
   });
   const appearAfter = useSpring({
     to: { transform: "translateY(0)", opacity: 1 },
     from: { transform: "translateY(-0.5rem)", opacity: 0 },
-    delay: 1000,
+    delay: 600,
   });
   const AnimatedTitle = animated(Title);
   const AnimatedSubtitle = animated(Subtitle);
