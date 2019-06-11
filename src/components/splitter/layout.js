@@ -24,4 +24,16 @@ export const LeftContent = styled(Content)`
   transform-origin: left top;
 `;
 
-export const RightContent = styled(Content)``;
+export const RightContent = styled(Content)`
+  min-height: 100%;
+  position: relative;
+`;
+
+export const Footer = styled.footer`
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 3rem);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin-left: -3rem;
+`;
