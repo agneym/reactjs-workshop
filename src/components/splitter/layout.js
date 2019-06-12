@@ -29,6 +29,11 @@ export const RightContent = styled(Content)`
   position: relative;
 `;
 
+export const InsideRight = styled.div`
+  height: calc(100% - 4rem);
+  padding: 1rem 2rem;
+`;
+
 export const Footer = styled.footer`
   height: 4rem;
   position: absolute;
