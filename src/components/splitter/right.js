@@ -19,7 +19,11 @@ function Right({ className, stage, children, nextLink }) {
       <S.Footer>
         <S.FooterContent role="group">
           <BreadCrumbs till={stage} />
-          {!!nextLink && <NextBtn to={nextLink}>Next ⟶</NextBtn>}
+          {!!nextLink ? (
+            <NextBtn to={nextLink}>Next ⟶</NextBtn>
+          ) : (
+            <NextBtn to="/complete">Complete</NextBtn>
+          )}
         </S.FooterContent>
       </S.Footer>
     </S.RightContent>

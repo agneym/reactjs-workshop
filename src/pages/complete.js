@@ -1,13 +1,23 @@
-import React, { useEffect, createRef } from "react";
+import React, { useLayoutEffect, createRef } from "react";
 import Reward from "react-rewards";
 
 import developer from "../images/developer.svg";
 import Layout from "../components/layout";
 import NextBtn from "../components/splitter/next-btn";
 
+const rewardConfig = {
+  lifetime: 200,
+  angle: 90,
+  decay: 0.91,
+  spread: 100,
+  startVelocity: 35,
+  elementCount: 100,
+  springAnimation: true,
+};
+
 function Complete() {
   const rewards = createRef(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     requestAnimationFrame(() => {
       if (rewards.current) {
         rewards.current.rewardMe();
@@ -16,7 +26,6 @@ function Complete() {
   });
   return (
     <Layout>
-      <Reward ref={rewards} />
       <div
         css={`
           min-height: 100vh;
@@ -34,14 +43,16 @@ function Complete() {
             width: 30%;
           `}
         />
-        <h1
-          css={`
-            margin-top: 4rem;
-            margin-bottom: 0;
-          `}
-        >
-          CONGRATS!
-        </h1>
+        <Reward ref={rewards} type="confetti" config={rewardConfig}>
+          <h1
+            css={`
+              margin-top: 4rem;
+              margin-bottom: 0;
+            `}
+          >
+            CONGRATS!
+          </h1>
+        </Reward>
         <h2>on taking the first step to be a web developer</h2>
         <NextBtn to="/">Start Afresh</NextBtn>
       </div>
