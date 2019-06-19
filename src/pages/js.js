@@ -11,7 +11,7 @@ function JSPage() {
         <Splitter.Left>
           <Heading title="JS" subtitle="JavaScript" />
         </Splitter.Left>
-        <Splitter.Right>
+        <Splitter.Right stage={3}>
           <p>Right</p>
         </Splitter.Right>
       </Splitter>

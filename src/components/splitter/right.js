@@ -6,7 +6,7 @@ import * as S from "./layout";
 import NextBtn from "./next-btn";
 import BreadCrumbs from "./breadcrumbs";
 
-function Right({ className, path, children, nextLink }) {
+function Right({ className, stage, children, nextLink }) {
   const appear = useSpring({
     to: { transform: "translateY(0)", opacity: 1 },
     from: { transform: "translateY(-0.4rem)", opacity: 0 },
@@ -17,7 +17,7 @@ function Right({ className, path, children, nextLink }) {
       <animated.div style={appear}>{children}</animated.div>
       <S.Footer>
         <S.FooterContent role="group">
-          <BreadCrumbs />
+          <BreadCrumbs till={stage} />
           {!!nextLink && <NextBtn to={nextLink}>Next ⟶</NextBtn>}
         </S.FooterContent>
       </S.Footer>

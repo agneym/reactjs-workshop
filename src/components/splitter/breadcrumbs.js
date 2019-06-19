@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const stages = [
   { name: "Home", url: "/" },
@@ -18,10 +19,11 @@ const StyledLink = styled(Link)`
   }
 `;
 
-function Breadcrumbs() {
+function Breadcrumbs({ till }) {
+  const reachedStages = stages.slice(0, till);
   return (
     <nav>
-      {stages.map((stage, index) => (
+      {reachedStages.map((stage, index) => (
         <span>
           {!!index && (
             <span
@@ -39,5 +41,13 @@ function Breadcrumbs() {
     </nav>
   );
 }
+
+Breadcrumbs.defaultProps = {
+  till: 0,
+};
+
+Breadcrumbs.propTypes = {
+  till: PropTypes.number,
+};
 
 export default Breadcrumbs;
