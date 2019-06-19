@@ -11,8 +11,8 @@ function HTMLPage() {
         <Splitter.Left>
           <Heading title="HTML" subtitle="Hyper Text Markup Language" />
         </Splitter.Left>
-        <Splitter.Right>
-          <p>Right</p>
+        <Splitter.Right nextLink="/css">
+          <p>Right Content</p>
         </Splitter.Right>
       </Splitter>
     </Layout>

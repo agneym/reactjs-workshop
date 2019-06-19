@@ -11,7 +11,7 @@ function CSSPage() {
         <Splitter.Left>
           <Heading title="CSS" subtitle="Cascading Style Sheets" />
         </Splitter.Left>
-        <Splitter.Right>
+        <Splitter.Right nextLink="/js">
           <p>Right</p>
         </Splitter.Right>
       </Splitter>

@@ -17,7 +17,7 @@ function Right({ className, path, children, nextLink }) {
       <S.Footer>
         <S.FooterContent role="group">
           <p></p>
-          {nextLink && <NextBtn>Next ⟶</NextBtn>}
+          {!!nextLink && <NextBtn to={nextLink}>Next ⟶</NextBtn>}
         </S.FooterContent>
       </S.Footer>
     </S.RightContent>
