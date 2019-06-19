@@ -4,7 +4,6 @@ export const Container = styled.main`
   display: grid;
   grid-template-columns: 30% auto;
   min-height: 100vh;
-  grid-column-gap: 3rem;
   align-items: center;
 `;
 
@@ -25,17 +24,22 @@ export const LeftContent = styled(Content)`
 `;
 
 export const RightContent = styled(Content)`
-  min-height: 100%;
+  min-height: calc(100% - 4rem);
+  overflow-y: auto;
   position: relative;
+`;
+
+export const InsideRight = styled.div`
+  height: calc(100% - 4rem);
+  padding: 1rem 2rem;
 `;
 
 export const Footer = styled.footer`
   height: 4rem;
   position: absolute;
   bottom: 0;
-  width: calc(100% + 3rem);
+  width: calc(100%);
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-  margin-left: -3rem;
 `;
 
 export const FooterContent = styled.div`

@@ -12,9 +12,10 @@ function Right({ className, stage, children, nextLink }) {
     from: { transform: "translateY(-0.4rem)", opacity: 0 },
     delay: 1000,
   });
+  const AnimatedInsideRight = animated(S.InsideRight);
   return (
     <S.RightContent className={className}>
-      <animated.div style={appear}>{children}</animated.div>
+      <AnimatedInsideRight style={appear}>{children}</AnimatedInsideRight>
       <S.Footer>
         <S.FooterContent role="group">
           <BreadCrumbs till={stage} />
