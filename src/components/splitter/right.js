@@ -4,6 +4,7 @@ import { useSpring, animated } from "react-spring";
 
 import * as S from "./layout";
 import NextBtn from "./next-btn";
+import BreadCrumbs from "./breadcrumbs";
 
 function Right({ className, path, children, nextLink }) {
   const appear = useSpring({
@@ -16,7 +17,7 @@ function Right({ className, path, children, nextLink }) {
       <animated.div style={appear}>{children}</animated.div>
       <S.Footer>
         <S.FooterContent role="group">
-          <p></p>
+          <BreadCrumbs />
           {!!nextLink && <NextBtn to={nextLink}>Next ⟶</NextBtn>}
         </S.FooterContent>
       </S.Footer>
