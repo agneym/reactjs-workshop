@@ -32,7 +32,14 @@ function Complete() {
             width: 30%;
           `}
         />
-        <h1>CONGRATS!</h1>
+        <h1
+          css={`
+            margin-top: 4rem;
+            margin-bottom: 0;
+          `}
+        >
+          CONGRATS!
+        </h1>
         <h2>on taking the first step to be a web developer</h2>
       </div>
     </Layout>
