@@ -8,6 +8,7 @@ const stages = [
   { name: "HTML", url: "/html" },
   { name: "CSS", url: "/css" },
   { name: "JS", url: "/js" },
+  { name: "React", url: "/react" },
 ];
 
 const StyledLink = styled(Link)`
@@ -24,7 +25,7 @@ function Breadcrumbs({ till }) {
   return (
     <nav>
       {reachedStages.map((stage, index) => (
-        <span>
+        <span key={stage.url}>
           {!!index && (
             <span
               css={`

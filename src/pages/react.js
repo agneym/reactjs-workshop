@@ -4,19 +4,19 @@ import Layout from "../components/layout";
 import Splitter from "../components/splitter";
 import Heading from "../components/heading";
 
-function JSPage() {
+function ReactPage() {
   return (
     <Layout>
       <Splitter>
         <Splitter.Left>
-          <Heading title="JS" subtitle="JavaScript" />
+          <Heading title="React" subtitle="THE Framework" />
         </Splitter.Left>
-        <Splitter.Right nextLink="/react" stage={3}>
-          <p>Right</p>
+        <Splitter.Right stage={4}>
+          <p>Right Content</p>
         </Splitter.Right>
       </Splitter>
     </Layout>
   );
 }
 
-export default JSPage;
+export default ReactPage;
