@@ -3,6 +3,7 @@ import Reward from "react-rewards";
 
 import developer from "../images/developer.svg";
 import Layout from "../components/layout";
+import NextBtn from "../components/splitter/next-btn";
 
 function Complete() {
   const rewards = createRef(null);
@@ -15,6 +16,7 @@ function Complete() {
   });
   return (
     <Layout>
+      <Reward ref={rewards} />
       <div
         css={`
           min-height: 100vh;
@@ -41,6 +43,7 @@ function Complete() {
           CONGRATS!
         </h1>
         <h2>on taking the first step to be a web developer</h2>
+        <NextBtn to="/">Start Afresh</NextBtn>
       </div>
     </Layout>
   );
