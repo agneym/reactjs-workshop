@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Splitter from "../components/splitter";
 import Heading from "../components/heading";
 
-function HTMLPage() {
+function Language() {
   return (
     <Layout>
       <Splitter>
@@ -19,4 +19,4 @@ function HTMLPage() {
   );
 }
 
-export default HTMLPage;
+export default Language;
