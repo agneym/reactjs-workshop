@@ -14,8 +14,6 @@ exports.createPages = ({ graphql, actions }) => {
               edges {
                 node {
                   frontmatter {
-                    title
-                    subtitle
                     slug
                   }
                 }
@@ -27,19 +25,23 @@ exports.createPages = ({ graphql, actions }) => {
         if (result.errors) {
           reject(result.errors);
         }
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          const { title, subtitle, slug: path } = node.frontmatter;
-          createPage({
-            path,
-            component: template,
-            // In your blog post template's graphql query, you can use path
-            // as a GraphQL variable to query for data from the markdown file.
-            context: {
-              title,
-              subtitle,
-            },
-          });
-        });
+        result.data.allMarkdownRemark.edges.forEach(
+          ({ node }, index, posts) => {
+            const { slug: path } = node.frontmatter;
+            const prev =
+              index === posts.length - 1 ? null : posts[index + 1].node;
+            const next = index === 0 ? null : posts[index - 1].node;
+
+            createPage({
+              path,
+              component: template,
+              context: {
+                prev,
+                next,
+              },
+            });
+          }
+        );
       })
     );
   });

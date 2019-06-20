@@ -1,6 +1,7 @@
 ---
 title: "HTML"
 subtitle: "Hypertext Markup Language"
+stage: 1
 slug: "/html"
 ---
 
