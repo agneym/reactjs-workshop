@@ -7,8 +7,7 @@ import Heading from "../components/heading";
 
 function Language({ data, pageContext }) {
   const post = data.markdownRemark;
-  const { previous, next } = pageContext;
-  console.log(next);
+  const { next } = pageContext;
   return (
     <Layout>
       <Splitter>
@@ -19,7 +18,7 @@ function Language({ data, pageContext }) {
           />
         </Splitter.Left>
         <Splitter.Right
-          nextLink={next.frontmatter.slug}
+          nextLink={!!next ? next.frontmatter.slug : null}
           stage={post.frontmatter.stage}
         >
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
