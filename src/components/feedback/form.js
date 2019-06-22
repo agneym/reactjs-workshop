@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { PrimaryBtn } from "../btn";
+
 const Field = styled.div`
   margin: 2rem 0;
   display: flex;
@@ -78,6 +80,13 @@ function Form() {
           What did <strong>not</strong> do well?
         </Label>
       </Field>
+      <div
+        css={`
+          text-align: center;
+        `}
+      >
+        <PrimaryBtn>Submit</PrimaryBtn>
+      </div>
     </form>
   );
 }
