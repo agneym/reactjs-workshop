@@ -40,7 +40,17 @@ function Form() {
       css={`
         margin: 2rem 4rem;
       `}
+      name="feedback"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
+      <input
+        type="hidden"
+        name="form-name"
+        value="feedback"
+        action="/complete"
+      />
       <Field>
         <Input
           type="text"
