@@ -6,6 +6,7 @@ const Btn = styled(Link)`
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: transparent;
+  cursor: pointer;
 `;
 
 export const PrimaryBtn = styled(Btn)`

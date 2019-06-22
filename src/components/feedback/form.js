@@ -95,7 +95,9 @@ function Form() {
           text-align: center;
         `}
       >
-        <PrimaryBtn>Submit</PrimaryBtn>
+        <PrimaryBtn as="button" type="submit">
+          Submit
+        </PrimaryBtn>
       </div>
     </form>
   );
