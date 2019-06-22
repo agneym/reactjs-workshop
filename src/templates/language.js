@@ -4,12 +4,17 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splitter from "../components/splitter";
 import Heading from "../components/heading";
+import SEO from "../components/seo";
 
 function Language({ data, pageContext }) {
   const post = data.markdownRemark;
   const { next } = pageContext;
   return (
     <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+      />
       <Splitter>
         <Splitter.Left>
           <Heading

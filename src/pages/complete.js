@@ -4,6 +4,7 @@ import Reward from "react-rewards";
 import developer from "../images/developer.svg";
 import Layout from "../components/layout";
 import { PrimaryBtn, SecondaryBtn } from "../components/btn";
+import SEO from "../components/seo";
 
 const rewardConfig = {
   lifetime: 200,
@@ -26,6 +27,7 @@ function Complete() {
   });
   return (
     <Layout>
+      <SEO title="Complete" />
       <div
         css={`
           min-height: 100vh;
