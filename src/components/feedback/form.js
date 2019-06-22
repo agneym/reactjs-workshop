@@ -3,6 +3,12 @@ import styled from "styled-components";
 
 const Field = styled.div`
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column-reverse;
+`;
+
+const Label = styled.label`
+  font-size: 0.8rem;
 `;
 
 const Input = styled.input`
@@ -16,10 +22,14 @@ const Input = styled.input`
   border-style: solid;
   border-radius: 0.3rem;
   border-color: lightgrey;
-`;
 
-const Label = styled.label`
-  font-size: 0.8rem;
+  &:focus {
+    border-color: ${props => props.theme.colors.primary};
+  }
+
+  &:focus + ${Label} {
+    color: ${props => props.theme.colors.secondary};
+  }
 `;
 
 function Form() {
@@ -30,9 +40,6 @@ function Form() {
       `}
     >
       <Field>
-        <Label htmlFor="name">
-          Name (you don't have to fill this, but you can.)
-        </Label>
         <Input
           type="text"
           id="name"
@@ -40,9 +47,11 @@ function Form() {
           placeholder="John Doe"
           autoComplete="name"
         />
+        <Label htmlFor="name">
+          Name (you don't have to fill this, but you can.)
+        </Label>
       </Field>
       <Field>
-        <Label htmlFor="well">What did I do well?</Label>
         <Input
           as="textarea"
           rows="4"
@@ -50,12 +59,11 @@ function Form() {
           id="well"
           name="well"
           placeholder=""
+          autoComplete="off"
         />
+        <Label htmlFor="well">What did I do well?</Label>
       </Field>
       <Field>
-        <Label htmlFor="not-well">
-          What did <strong>not</strong> do well?
-        </Label>
         <Input
           as="textarea"
           rows="4"
@@ -64,7 +72,11 @@ function Form() {
           name="notWell"
           placeholder=""
           required
+          autoComplete="off"
         />
+        <Label htmlFor="not-well">
+          What did <strong>not</strong> do well?
+        </Label>
       </Field>
     </form>
   );
