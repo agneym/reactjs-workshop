@@ -5,6 +5,7 @@ const Btn = styled(Link)`
   padding: 0.5rem 1.2rem;
   text-decoration: none;
   border-radius: 1.5rem;
+  background-color: transparent;
 `;
 
 export const PrimaryBtn = styled(Btn)`
@@ -15,4 +16,9 @@ export const PrimaryBtn = styled(Btn)`
     background-color: ${props => props.theme.colors.secondary};
     color: #fff;
   }
+`;
+
+export const SecondaryBtn = styled(Btn)`
+  background-color: ${props => props.theme.colors.primary};
+  color: #fff;
 `;
