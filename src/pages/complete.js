@@ -3,7 +3,7 @@ import Reward from "react-rewards";
 
 import developer from "../images/developer.svg";
 import Layout from "../components/layout";
-import NextBtn from "../components/splitter/next-btn";
+import { PrimaryBtn } from "../components/btn";
 
 const rewardConfig = {
   lifetime: 200,
@@ -54,7 +54,7 @@ function Complete() {
           </h1>
         </Reward>
         <h2>on taking the first step to be a web developer</h2>
-        <NextBtn to="/">Start Afresh</NextBtn>
+        <PrimaryBtn to="/">Start Afresh</PrimaryBtn>
       </div>
     </Layout>
   );

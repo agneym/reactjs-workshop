@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useSpring, animated } from "react-spring";
 
 import * as S from "./layout";
-import NextBtn from "./next-btn";
+import { PrimaryBtn } from "../btn";
 import BreadCrumbs from "./breadcrumbs";
 
 function Right({ className, stage, children, nextLink }) {
@@ -20,9 +20,9 @@ function Right({ className, stage, children, nextLink }) {
         <S.FooterContent role="group">
           <BreadCrumbs till={stage} />
           {!!nextLink ? (
-            <NextBtn to={nextLink}>Next ⟶</NextBtn>
+            <PrimaryBtn to={nextLink}>Next ⟶</PrimaryBtn>
           ) : (
-            <NextBtn to="/complete">Complete</NextBtn>
+            <PrimaryBtn to="/complete">Complete</PrimaryBtn>
           )}
         </S.FooterContent>
       </S.Footer>
