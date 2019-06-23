@@ -24,18 +24,19 @@ export const LeftContent = styled(Content)`
 `;
 
 export const RightContent = styled(Content)`
-  min-height: calc(100% - 4rem);
-  overflow-y: auto;
+  height: 100vh;
   position: relative;
 `;
 
 export const InsideRight = styled.div`
-  height: calc(100% - 4rem);
+  height: calc(100% - 6rem);
   padding: 1rem 2rem;
+  overflow-y: auto;
 `;
 
 export const Footer = styled.footer`
   height: 4rem;
+  background-color: #ffffff;
   position: absolute;
   bottom: 0;
   width: calc(100%);
