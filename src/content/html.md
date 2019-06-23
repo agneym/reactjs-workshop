@@ -5,4 +5,6 @@ stage: 1
 slug: "/html"
 ---
 
-# Let's put in some HTML here
+# References
+
+- [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
