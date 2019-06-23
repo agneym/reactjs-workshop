@@ -6,5 +6,6 @@ export default {
   colors: {
     primary: "#3FABAF",
     secondary: "#fc2f70",
+    link: "rgb(68, 0, 204)",
   },
 };
