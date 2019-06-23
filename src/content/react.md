@@ -5,4 +5,12 @@ stage: 4
 slug: "/react"
 ---
 
-# Let's put in some React here
+# References
+
+[Documentation](https://reactjs.org/)
+
+## Courses
+
+- [Start learning React](https://egghead.io/courses/start-learning-react)
+- [Learn ReactJS - Codecademy](https://www.codecademy.com/learn/react-101)
+- [Learn React - React Armory](https://reactarmory.com/guides/learn-react-by-itself)
