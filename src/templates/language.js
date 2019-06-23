@@ -1,17 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
-import styled from "styled-components";
 
+import Content from "./styles.language";
 import Layout from "../components/layout";
 import Splitter from "../components/splitter";
 import Heading from "../components/heading";
 import SEO from "../components/seo";
-
-const Content = styled.div`
-  a {
-    color: ${props => props.theme.colors.link};
-  }
-`;
 
 function Language({ data, pageContext }) {
   const post = data.markdownRemark;
