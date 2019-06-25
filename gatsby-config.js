@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `ReactJS Workshop`,
-    description: `Frontend Workshop`,
-    author: `@agneymenon`,
+    description: `Frontend Workshop Material for Facebook Developer Group Kochi Meetup`,
+    author: `Boy with Silver Wings`,
+    twitter: `https://twitter.com/agneymenon`,
+    githubRepo: `https://github.com/BoyWithSilverWings/reactjs-workshop`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
