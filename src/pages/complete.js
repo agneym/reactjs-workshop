@@ -5,6 +5,7 @@ import developer from "../images/developer.svg";
 import Layout from "../components/layout";
 import { PrimaryBtn, SecondaryBtn } from "../components/btn";
 import SEO from "../components/seo";
+import FollowFooter from "../components/follow-footer";
 
 const rewardConfig = {
   lifetime: 200,
@@ -75,6 +76,7 @@ function Complete() {
           </SecondaryBtn>
         </div>
       </div>
+      <FollowFooter />
     </Layout>
   );
 }
