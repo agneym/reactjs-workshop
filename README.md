@@ -26,3 +26,9 @@ For running build:
 ```
 npm run build
 ```
+
+## Note
+
+The resources presented on this website are either personally tested or highly recommended from friends, acquintances. I'm not paid to make these recommendations.
+
+Also, this list is not exhaustive by any means.
