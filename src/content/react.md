@@ -11,6 +11,7 @@ slug: "/react"
 
 ## Courses
 
-- [Start learning React](https://egghead.io/courses/start-learning-react)
+- [Start learning React - EggHead](https://egghead.io/courses/start-learning-react)
 - [Learn ReactJS - Codecademy](https://www.codecademy.com/learn/react-101)
 - [Learn React - React Armory](https://reactarmory.com/guides/learn-react-by-itself)
+- [Complete Intro to React - Frontend Masters](https://frontendmasters.com/courses/complete-react-v5/)
