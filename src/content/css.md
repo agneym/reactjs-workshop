@@ -5,6 +5,10 @@ stage: 2
 slug: "/css"
 ---
 
+# Material
+
+- [Exercise - Codepen](https://codepen.io/BoyWithSilverWings/pen/VJrQgp)
+
 # References
 
 - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
@@ -22,7 +26,3 @@ slug: "/css"
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Bulma](https://bulma.io)
-
-# Material
-
-- [Exercise - Codepen](https://codepen.io/BoyWithSilverWings/pen/VJrQgp)
