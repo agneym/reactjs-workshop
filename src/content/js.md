@@ -46,3 +46,7 @@ But here are a few guidelines to get you started:
 - Make something, publish it to [Github](https://github.com), add it to [Codepen](https://codepen.io) - Don't make it huge, make it yours.
 - Don't be afraid to tweet your journey, write a blog post, create a status and more - Learn in Public.
   Practice.
+
+# Material
+
+[Exercise - Codepen](https://codepen.io/BoyWithSilverWings/pen/qzVoMp)
