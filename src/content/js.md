@@ -20,8 +20,10 @@ slug: "/js"
 ## Sites
 
 - [Free Code Camp](https://www.freecodecamp.org/)
-- [Codecademy](https://www.codecademy.com/catalog/language/javascript)
+- [Learn JavaScript Online](https://learnjavascript.online/)
 - [Interneting is Hard](https://internetingishard.com/)
+- [Codecademy](https://www.codecademy.com/catalog/language/javascript)
+- [Modern JavaScript Tutorial](https://javascript.info/)
 
 ## Books
 
@@ -38,6 +40,13 @@ slug: "/js"
 
 - [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [ECMA Spec](https://www.ecma-international.org/ecma-262/9.0/index.html#Title)
+
+## Blogs
+
+- [Harry Robert's Personal Blog](https://csswizardry.com/) - Harry Roberts is a performance magician.
+- [Mathias Bynes's Personal Blog](https://mathiasbynens.be/)
+- [Jack Archibald](https://jakearchibald.com/)
+- [Paul Irish](https://www.paulirish.com/)
 
 ## How to learn JavaScript
 

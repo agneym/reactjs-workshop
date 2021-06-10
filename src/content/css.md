@@ -17,12 +17,25 @@ slug: "/css"
 - [Flexbox Complete Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-# Games
+## Tutorials
+
+- [Freecodecamp](http://freecodecamp.org/)
+- [Learn CSS - web.dev](https://web.dev/learn/css/)
+
+## Games
 
 - [CSS Diner](https://flukeout.github.io/) - Learn selectors and specificity
 - [Flexbox Froggy](https://flexboxfroggy.com/) - Learn flexbox model.
 
-# Styling Frameworks
+## Blogs
+
+- [CSS Tricks](https://css-tricks.com/)
+- [Josh W Comeau Personal Blog](joshwcomeau.com)
+- [Ahmad Shaheed Personal Blog](https://ishadeed.com/articles/)
+- [Lea Verou's Personal Blog](https://lea.verou.me/)
+- [Rachel Andrew](https://rachelandrew.co.uk/)
+
+## Styling Frameworks
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Bulma](https://bulma.io)

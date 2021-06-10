@@ -5,12 +5,15 @@ import theme from "../utils/theme";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: ${props => props.theme.fonts.normal};
+    font-family: ${(props) => props.theme.fonts.normal};
     margin: 0;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${props => props.theme.fonts.heading};
+    font-family: ${(props) => props.theme.fonts.heading};
     font-weight: 300;
+  }
+  h1 {
+    font-size: 1.8em;
   }
 `;
 
