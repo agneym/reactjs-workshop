@@ -1,2 +1,2 @@
-require("typeface-open-sans")
-require("typeface-aleo")
+import "@fontsource/open-sans/400.css";
+import "@fontsource/aleo/300.css";
